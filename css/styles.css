@@ -135,7 +135,7 @@ NAVIGATION
 CONTENT ABOUT
 ***************************************************************/
 .about_container {
-    background-color: RGBA(254, 211, 133, 0.3);
+    /*background-color: RGBA(254, 211, 133, 0.3);*/
     padding-top: 1%;
 }
 
@@ -289,7 +289,7 @@ PROJECTS STYLING
 CONTACT FORM STYLING
 ***************************************************************/
 .contact_container {
-    background-color: RGBA(254, 211, 133, 0.3);
+    /*background-color: RGBA(254, 211, 133, 0.3);*/
     padding-top: 1%;
 }
 
@@ -300,12 +300,13 @@ form {
 
 input,
 textarea {
-    background-color: RGBA(0, 0, 0, 0.7);
-    border: 0;
+    /*background-color: RGBA(0, 0, 0, 0.7);*/
+    border: 1px solid RGBA(0, 0, 0, 0.7);
+    border-radius: 5px;
     box-sizing: border-box;
     font-size: 1rem;
-    color: white;
-    margin-bottom: 3px;
+    /*color: white;*/
+    margin-bottom: 10px;
     outline: none;
     padding: 10px 15px;
     width: 100%;
@@ -448,6 +449,7 @@ RESPONSIVE MEDIA QUERIES
     }
 
     .nav_item {
+        font-size: 1.2rem;
         width: 33%;
     }
 
