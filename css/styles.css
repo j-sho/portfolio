@@ -236,6 +236,11 @@ PROJECTS STYLING
     background-image: url("../images/CacaoEspinoza.png");
 }
 
+.landing-page-img {
+    background-image: url("../images/Landing-page-1.png");
+}
+
+
 .projects_item:hover>.projects_item_text {
     opacity: 1;
     height: 50%;
