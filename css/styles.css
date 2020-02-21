@@ -262,57 +262,7 @@ PROJECTS STYLING
     height: 250px;
 }
 
-
-.projects_item:hover>.projects_item_text {
-    opacity: 1;
-    height: 50%;
-}
-
-.projects_item:hover>.project_item_link {
-    opacity: 1;
-    height: 50%;
-}
-
-.projects_item_text,
-.project_item_link {
-    background-color: RGBA(238, 237, 237, 0.9);
-    color: RGBA(0, 0, 0, 0.7);
-    height: 0;
-    line-height: 120px;
-    opacity: 0;
-    position: absolute;
-    text-align: center;
-    transition: all 0.5s ease-in-out;
-    width: 100%;
-    z-index: 2;
-}
-
-.projects_item_text {
-    font-size: 1.2rem;
-    left: 0;
-    top: 0;
-}
-
-.project_item_link {
-    font-size: 1.5rem;
-    left: 0;
-    bottom: 0;
-}
-
-.project_item_link a {
-    color: RGBA(0, 0, 0, 0.7);
-    padding: 8px;
-    text-decoration: none;
-}
-
-
-.project_item_link:hover>a {
-    border: solid 2px RGBA(86, 202, 216, 1);
-    color: RGBA(0, 0, 0, 0.7);
-    text-decoration: none;
-}
-
-.owl-nav i {
+.owl-nav .svg-inline--fa {
     color: RGBA(86, 202, 216, 1);
     font-size: 2.5rem;
     position: absolute;
@@ -405,7 +355,7 @@ footer {
     text-decoration: none;
 }
 
-i {
+.social_icons .svg-inline--fa {
     cursor: pointer;
     text-align: center;
     transform: translate(0, 0);
@@ -427,7 +377,7 @@ i {
     }
 }
 
-.social_icons a:hover>i {
+.social_icons a:hover>.svg-inline--fa {
     animation: toBottomFromTop 0.5s forwards;
 }
 
