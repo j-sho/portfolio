@@ -3,41 +3,47 @@ GENERAL STYLING
 ***************************************************************/
 html,
 body {
-    min-height: 100%;
     font-family: 'Merriweather', serif;
     margin: 0;
+    min-height: 100%;
     width: 100%;
 }
 
 
 h1 {
-    font-family: 'Sacramento', cursive;
-    font-size: 4.5rem;
     color: black;
+    font-family: 'Sacramento', cursive;
+    font-size: 6rem;
     margin: 30px 0;
 }
 
 
 h2 {
     font-size: 1.5rem;
+    margin-top: 6%;
     text-align: center;
+}
+
+h3 {
+    font-size: 1.6rem;
 }
 
 
 section {
-    min-height: 100%;
     margin: 0;
-    padding-bottom: 30px;
+    min-height: 100%;
+    padding-bottom: 90px;
     width: 100%;
 }
 
 .container {
+    margin: 0 auto;
+    max-width: 1500px;
     min-height: 100%;
     padding: 50px 0 0;
     position: relative;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 1500px;
+    text-align: center;
+    width: 90%;
 }
 
 .hide {
@@ -60,19 +66,12 @@ HEADER
 
 
 .header-text {
-    margin: 10% 0 0;
-    max-width: 600px;
+    margin: 8% 0 0;
+    max-width: 850px;
     width: 100%;
 }
 
 .header-image {
-    /*bottom: 35%;*/
-    /*height: 30%;*/
-    /*position: absolute;*/
-    /*right: -20%;*/
-    /*width: 80%;*/
-    /*min-width: 300px;
-    max-width: 900px;*/
     max-width: 800px;
     width: 80%;
 
@@ -88,7 +87,7 @@ NAVIGATION
 .nav {
     background-color: RGBA(0, 0, 0, 0.8);
     display: flex;
-    padding-left: 25%;
+    padding: 2% 20% 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -100,42 +99,56 @@ NAVIGATION
     height: 50px;
     margin: 0;
     position: relative;
-    width: 15%;
-
-}
-
-.nav a {
-    color: white;
-    left: 10%;
-    margin: 0 auto;
-    position: absolute;
     text-align: center;
-    text-decoration: none;
-    top: 30%;
-    width: 100px;
-    -webkit-transition: font-size 1.2s;
-    /* For Safari 3.1 to 6.0 */
-    transition: font-size 1.2s;
+    width: 20%;
+
 }
 
-
-.nav a:hover {
-    font-size: 1.5rem;
+.nav_item__link {
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
     text-decoration: none;
-    top: 20%;
+    transition: all 0.2s ease-in-out;
+    width: 100px;
+}
 
+.nav_item__link:before, 
+.nav_item__link:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 0px;
+    height: 2px;
+    margin: 5px 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.75s;
+    opacity: 0;
+    background-color: RGBA(86, 202, 216, 1);
+}
+
+.nav_item__link:before {
+    left: 50%;
+}
+
+.nav_item__link:after {
+    right: 50%;
+}
+
+.nav_item:hover .nav_item__link:before,
+.nav_item:hover .nav_item__link:after {
+    width: 50%;
+    opacity: 1;
 }
 
 #menu {
     display: none;
-
 }
 
 /**************************************************************
 CONTENT ABOUT
 ***************************************************************/
 .about_container {
-    /*background-color: RGBA(254, 211, 133, 0.3);*/
     padding-top: 1%;
 }
 
@@ -170,8 +183,9 @@ CONTENT ABOUT
     color: white;
     height: 30px;
     line-height: 1.8;
+    min-width: 100px;
     text-align: center;
-    width: 100px;
+    width: 20%;
     z-index: 10;
 }
 
@@ -202,6 +216,31 @@ CONTENT ABOUT
     top: 0;
 }
 
+.width90, .width80, .width70, .width40 {
+    transition: width 0.2s ease-in-out;
+    transition-duration: 0.75s;
+    min-width: 100px;
+    width: 20%;
+}
+
+.about_container:hover .width90 {
+    width: 90%;
+}
+
+.about_container:hover .width80 {
+    width: 80%;
+}
+
+.about_container:hover .width70 {
+    width: 70%;
+}
+
+.about_container:hover .width40 {
+    width: 40%;
+}
+
+
+
 /**************************************************************
 PROJECTS STYLING
 ***************************************************************/
@@ -210,34 +249,17 @@ PROJECTS STYLING
     padding-top: 1%;
 }
 
-.projects {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 90%;
-}
 
 .projects_item {
-    background-image: url("https://picsum.photos/400/300");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border: solid 1px RGBA(238, 237, 237, 0.8);
     flex-grow: 1;
     position: relative;
-    max-width: 600px;
-    width: 390px;
-    height: 300px;
-}
-
-.cacao_img {
-    background-image: url("../images/CacaoEspinoza.png");
-}
-
-.landing-page-img {
-    background-image: url("../images/Landing-page-1.png");
+    max-width: 800px;
+    width: 90%;
+    height: 250px;
 }
 
 
@@ -256,7 +278,7 @@ PROJECTS STYLING
     background-color: RGBA(238, 237, 237, 0.9);
     color: RGBA(0, 0, 0, 0.7);
     height: 0;
-    line-height: 200px;
+    line-height: 120px;
     opacity: 0;
     position: absolute;
     text-align: center;
@@ -290,11 +312,27 @@ PROJECTS STYLING
     text-decoration: none;
 }
 
+.owl-nav i {
+    color: RGBA(86, 202, 216, 1);
+    font-size: 2.5rem;
+    position: absolute;
+}
+
+
+.fa-angle-double-right {
+    right: 0;
+}
+
+.fa-angle-double-left {
+    left: 0;
+}
+
+    
+    
 /**************************************************************
 CONTACT FORM STYLING
 ***************************************************************/
 .contact_container {
-    /*background-color: RGBA(254, 211, 133, 0.3);*/
     padding-top: 1%;
 }
 
@@ -305,12 +343,10 @@ form {
 
 input,
 textarea {
-    /*background-color: RGBA(0, 0, 0, 0.7);*/
     border: 1px solid RGBA(0, 0, 0, 0.7);
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 1rem;
-    /*color: white;*/
+    font-size: 1.3rem;
     margin-bottom: 10px;
     outline: none;
     padding: 10px 15px;
@@ -326,7 +362,7 @@ textarea {
     margin: 5px 0 0;
     outline: 0;
     padding: 10px 30px;
-    width: 100px;
+    width: 200px;
     transition: background-color 0.5s;
 }
 
@@ -336,7 +372,7 @@ textarea {
 }
 
 input:last-child {
-    margin-left: 59%;
+    margin-left: 10%;
 }
 
 /**************************************************************
@@ -355,7 +391,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /*overflow: hidden;*/
     padding-top: 3%;
     width: 500px;
 }
@@ -373,10 +408,6 @@ footer {
 i {
     cursor: pointer;
     text-align: center;
-    /*transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in;*/
-    /*transition-delay: 1s;*/
     transform: translate(0, 0);
     width: 40px;
 }
@@ -422,17 +453,42 @@ RESPONSIVE MEDIA QUERIES
 
 @media (max-width: 1100px) {
     h1 {
-        font-size: 3.5rem;
+        font-size: 5.6rem;
+    }
+
+    .header-text {
+        margin-top: 20%;
     }
 
     .header-text h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        
+    }
+
+    .nav {
+        padding: 2% 5% 1%;
+    }
+
+    .nav_item {
+        width: 30%;
+    }
+
+    .nav_item__link {
+        font-size: 1.5rem;
+    }
+
+    .personal_image {
+        float: none;
     }
 }
 
 @media (max-width: 900px) {
     h1 {
-        font-size: 3.5rem;
+        font-size: 6.5rem;
+    }
+
+    .header-text h3 {
+        font-size: 2rem;
     }
 
     .header-text {
@@ -441,22 +497,23 @@ RESPONSIVE MEDIA QUERIES
     }
 
     .header-image {
+        bottom: 20%;
         display: block;
         min-width: 0;
         right: 0;
         width: 100%;
-        bottom: 20%;
+        
     }
 
     .nav {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-top: 4%;
     }
 
-    .nav_item {
-        font-size: 1.2rem;
-        width: 33%;
+    .nav_item__link {
+        font-size: 1.5rem;
     }
+
+    
 
     .skills {
         width: 90%;
@@ -475,6 +532,6 @@ RESPONSIVE MEDIA QUERIES
     }
 
     input:last-child {
-        margin-left: 7%;
+        margin-left: 0;
     }
 }
