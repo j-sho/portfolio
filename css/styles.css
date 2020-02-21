@@ -262,6 +262,15 @@ PROJECTS STYLING
     height: 250px;
 }
 
+.owl-carousel .owl-stage-outer {
+    margin: 8% 0;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    margin-bottom: 5%;
+}
+
+
 .owl-nav .svg-inline--fa {
     color: RGBA(86, 202, 216, 1);
     font-size: 2.5rem;
