@@ -262,6 +262,10 @@ PROJECTS STYLING
     height: 250px;
 }
 
+.projects a:hover>.projects_item {
+    border: solid 8px RGBA(238, 237, 237, 1);
+}
+
 .owl-carousel .owl-stage-outer {
     margin: 8% 0;
 }
