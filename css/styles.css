@@ -80,7 +80,7 @@ h2 {
 
 hr {
   padding: 0;
-  margin: calc(2rem - 1px) auto;
+  margin: calc(5rem - 1px) auto;
   background: var(--color-subtle);
   border: none;
   height: 1px;
@@ -533,7 +533,7 @@ footer {
 RESPONSIVE MEDIA QUERIES
 ***************************************************************/
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .skills {
     width: 90%;
   }
@@ -549,9 +549,9 @@ RESPONSIVE MEDIA QUERIES
   input:last-child {
     margin-left: 0;
   }
-}
+} */
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   :root {
     --font-root-size: 1.25em;
   }
@@ -564,21 +564,21 @@ RESPONSIVE MEDIA QUERIES
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .navigation_container {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
-@media only screen and (min-width: 480px) {
+@media (min-width: 480px) {
   .navigation_container {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .navigation_container {
     font-size: 1em;
   }
@@ -629,7 +629,7 @@ RESPONSIVE MEDIA QUERIES
     background-image: url(../images/Countries_fullmob.png);
   }
 
-  .project_column_img.flags {
+  .project_column_img.game {
     background-image: url(../images/Game_fullmob.png);
   }
 
