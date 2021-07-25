@@ -558,7 +558,7 @@ RESPONSIVE MEDIA QUERIES
 
 }
 
-@media (max-width: 639px) {
+@media (max-width: 1023px) {
   .nav_heading {
     display: none;
   }
