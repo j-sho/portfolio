@@ -210,10 +210,10 @@ HEADER
 }
 
 .menu_button button.active::after {
+  transform: rotate(45deg);
   transition: all 0.3s ease;
   background: var(--color-secondary);
   box-shadow: none;
-  transform: rotate(45deg);
   top: 12px;
 }
 
