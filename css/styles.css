@@ -13,6 +13,7 @@ COLOR STYLING
   --grid-gutter: 0;
   --grid-row-gap: 40px;
   --grid-template-columns: repeat(12, 1fr);
+  --grid-template-columns: fit-content(10%);
   --grid-column-gap: 40px;
   --font-title: "Lato", sans-serif;
   --font-copy: "Merriweather", serif;
@@ -640,9 +641,15 @@ RESPONSIVE MEDIA QUERIES
     display: none;
   }
 
-  .project_column.left {
-    grid-column: 1/10;
+  .projects_item {
+    max-width: 100%;
+    width: 100%;
+    display: block;
   }
+
+  /* .project_column.left {
+    grid-column: 1/10;
+  } */
 
   .projects.container {
     max-width: 560px;
