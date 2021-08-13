@@ -13,7 +13,6 @@ COLOR STYLING
   --grid-gutter: 0;
   --grid-row-gap: 40px;
   --grid-template-columns: repeat(12, 1fr);
-  --grid-template-columns: fit-content(10%);
   --grid-column-gap: 40px;
   --font-title: "Lato", sans-serif;
   --font-copy: "Merriweather", serif;
@@ -383,7 +382,7 @@ PROJECTS STYLING
 }
 
 .project_column_img.game {
-  background-image: url(../images/Game_full1.png);
+  background-image: url(../images/Game_full.png);
 }
 
 .project_column_img.shortAPI {
