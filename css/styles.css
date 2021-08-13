@@ -554,24 +554,6 @@ footer {
 RESPONSIVE MEDIA QUERIES
 ***************************************************************/
 
-/* @media (max-width: 900px) {
-  .skills {
-    width: 90%;
-  }
-
-  .skills_bar {
-    width: 100%;
-  }
-
-  form {
-    width: 90%;
-  }
-
-  input:last-child {
-    margin-left: 0;
-  }
-} */
-
 @media (min-width: 1200px) {
   :root {
     --font-root-size: 1.25em;
@@ -606,6 +588,11 @@ RESPONSIVE MEDIA QUERIES
 
   .contact_form {
     min-width: 100%;
+  }
+
+  .container-module {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
