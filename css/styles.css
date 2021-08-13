@@ -5,22 +5,11 @@ COLOR STYLING
 :root {
   --color-primary: #008ccf;
   --color-secondary: #006190;
-  --color-secondary--active: #004262;
-  --color-tertiary: #861f9e;
-  --color-tertiary--active: #6e049e;
   --color-link: #0079b3;
-  --color-link--active: #004a6e;
-  --color-link--visited: var(--color-tertiary);
-  --color-link--visited-active: var(--color-tertiary--active);
-  --color-success: #15a453;
-  --color-danger: #d83135;
   --color-font: #333;
   --color-font-subtle: #666;
   --color-subtle: #d8d8d8;
   --color-subtler: #f9f9f9;
-  --screen-sm-min: 768px;
-  --screen-md-min: 960px;
-  --font-root-size: 1.2em;
   --grid-gutter: 0;
   --grid-row-gap: 40px;
   --grid-template-columns: repeat(12, 1fr);
@@ -29,7 +18,7 @@ COLOR STYLING
   --font-copy: "Merriweather", serif;
   --font-code: "Source Code Pro", Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
-  --font-root-size: 1.25em;
+  --font-root-size: 1.2em;
 }
 
 /**************************************************************
@@ -66,7 +55,6 @@ h1 {
   margin: 0;
   color: inherit;
   font-weight: 900;
-  text-rendering: optimizeLegibility;
   font-size: clamp(1.8em, calc(1em + 2.4vw), 3em);
   line-height: 1.2;
 }
@@ -74,7 +62,7 @@ h1 {
 h2 {
   text-align: center;
   margin-bottom: 0.5em;
-  font-size: 2.4em;
+  font-size: 2em;
   font-weight: 900;
 }
 
@@ -270,91 +258,6 @@ a:focus {
 .custom-dropdown .nav_list-link:focus {
   background-color: transparent;
 }
-/* .menu_button {
-  background-color: inherit;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-.menu_button button {
-  width: 40px;
-} */
-
-/* .menu_button button::after {
-  background-color: var(--color-primary);
-  box-shadow: 0 15px 0 var(--color-primary), 0 30px 0 var(--color-primary);
-
-  -webkit-box-shadow: 0 15px 0 var(--color-primary),
-    0 30px 0 var(--color-primary);
-  height: 3px;
-}
-
-.menu_button button:hover::after,
-.menu_button button:focus::after {
-  background-color: var(--color-secondary);
-  box-shadow: 0 15px 0 var(--color-secondary), 0 30px 0 var(--color-secondary);
-
-  -webkit-box-shadow: 0 15px 0 var(--color-secondary),
-    0 30px 0 var(--color-secondary);
-  height: 3px;
-} */
-
-/* .nav_list.dropdown ul {
-  /* border: 1px solid rgb(0, 140, 207);
-  border-radius: 8px; */
-  background-color: rgb(255, 255, 255);
-} */
-*/
-
-/* .nav_list.dropdown .nav_list-link:after {
-  top: 95%;
-}
-
-.nav_list.dropdown a {
-  font-size: 0.7em;
-}
-
-/* .menu_button button::after {
-  transition: all 0.3s ease;
-}
-
-.menu_button button::before {
-  transition: all 0.3s ease;
-}
-
-.menu_button button.active {
-  transition: all 0.3s ease;
-}
-
-.menu_button button.active::after {
-  transform: rotate(45deg);
-  transition: all 0.3s ease;
-  background: var(--color-secondary);
-  box-shadow: none;
-  top: 12px;
-}
-
-.menu_button button.active:hover::after {
-  opacity: 0.9;
-}
-
-.menu_button button.active::before {
-  transition: all 0.3s ease;
-  position: absolute;
-  top: 12px;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: var(--color-secondary);
-  box-shadow: none;
-  transform: rotate(-44deg);
-  content: "";
-}
-
-.menu_button button.active:hover::before {
-  opacity: 0.9;
-} */
 
 .navigation_container,
 .navigation_container ul {
@@ -368,12 +271,6 @@ CONTENT ABOUT
   text-align: center;
 }
 
-.about_container p {
-  margin-top: 0.4em;
-  font-size: clamp(1.125em, 2vw, 1.6em);
-  line-height: 1.5;
-}
-
 /**************************************************************
 PROJECTS STYLING
 ***************************************************************/
@@ -381,6 +278,10 @@ PROJECTS STYLING
   background-color: white;
   padding: 0;
   margin: 0;
+}
+
+.projetcs_container p {
+  font-size: clamp(1em, 1vw, 1.4em);
 }
 
 .project_column_link {
@@ -503,6 +404,7 @@ label {
   display: inline-block;
   line-height: 1.2;
   font-weight: 300;
+  font-size: 0.9em;
 }
 
 .req {
