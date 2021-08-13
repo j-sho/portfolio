@@ -495,7 +495,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 3%;
-  width: 500px;
+  max-width: 500px;
 }
 
 .social_icons a {
@@ -641,7 +641,7 @@ RESPONSIVE MEDIA QUERIES
   }
 
   .project_column.left {
-    grid-column: 1/13;
+    grid-column: 1/10;
   }
 
   .projects.container {
