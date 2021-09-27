@@ -12,7 +12,7 @@ COLOR STYLING
   --color-subtler: #f9f9f9;
   --grid-gutter: 0;
   --grid-row-gap: 40px;
-  --grid-template-columns: repeat(12, 1fr);
+  --grid-template-columns: repeat(12, minmax(100px, 1fr));
   --grid-column-gap: 40px;
   --font-title: "Lato", sans-serif;
   --font-copy: "Merriweather", serif;
@@ -389,6 +389,10 @@ PROJECTS STYLING
   background-image: url(../images/shortAPI_full.png);
 }
 
+.project_column_img.volandovoy {
+  background-image: url(../images/VolandoVoy_full.png);
+}
+
 /**************************************************************
 CONTACT FORM STYLING
 ***************************************************************/
@@ -633,11 +637,16 @@ RESPONSIVE MEDIA QUERIES
   .project_column_img.shortAPI {
     background-image: url(../images/shortAPI_fullmob.png);
   }
+
+  .project_column_img.volandovoy {
+    background-image: url(../images/VolandoVoy_mob.png);
+  }
 }
 
 @media (max-width: 960px) {
   .project_column.right {
-    display: none;
+    /* display: none; */
+    height: 73vh;
   }
 
   .projects_item {
