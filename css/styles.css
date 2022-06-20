@@ -405,6 +405,10 @@ PROJECTS STYLING
   background-image: url(../images/InsurePage_full.png);
 }
 
+.project_column_img.weather {
+  background-image: url(../images/Weather_full.png);
+}
+
 .project_column_img.flags {
   background-image: url(../images/Countries_full.png);
 }
